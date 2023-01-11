@@ -1,0 +1,46 @@
+*{ font-size: 15px;
+    font-family: 'Roboto', sans-serif;;
+}
+    
+
+
+p, span{
+    color: blue;
+}
+
+h1{
+    color: red;
+    margin: 40px 10px 20px 10px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    /**otra forma de expresar este padding es asi
+    padding: 5px 10px 15px 20px;*/
+    border-top: 10px solid grey;
+    border-right: 5px solid grey;
+    border-bottom: 10px solid grey;
+    border-left: 5px solid grey;
+}
+
+section {
+    width: 300px;
+    border: 15px solid grey;
+    padding: 50px;
+    margin: 20px;
+  }
+  /* No tiene que tener el nombre ID*/
+  #IDParrafoPrincipal{
+    color: black;
+    font-size: 20px;
+  }
+  /* No tiene que tener el nombre class*/
+  .ClassDefiniciones{
+    color: grey;
+    font-weight: bold;
+  }
+
+  section h1 {
+    color:  darkslategrey;
+    font-size: 40px
+  }
