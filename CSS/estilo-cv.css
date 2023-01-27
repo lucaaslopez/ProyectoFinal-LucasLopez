@@ -1,0 +1,61 @@
+*{font-family: 'Sofia Sans', sans-serif;
+text-align: center;
+box-sizing: border-box;
+}
+
+.class-datos{
+    color: black;
+    font-style: italic;
+    font-weight: normal ;
+    font-size: 25px;
+    padding-top: 0px;
+}
+
+.class-titulos{
+    font-size: 30px;
+    color: grey;
+    font-weight: normal ;
+    padding-top: 20px;
+    margin-bottom: 0px;
+    vertical-align: middle
+}
+
+h2{
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    margin: 0;
+    vertical-align:middle;
+}
+
+.class-datos li{
+    list-style-position: inside;
+    text-align: center;
+}
+
+#FotoCV{
+    display: block;
+    margin: 10px 10px 10px auto;
+}
+
+#Nombre{
+    display: block;
+    margin: 10px auto 10px 10px;
+    justify-content: start;
+    width: 50px;
+}
+
+.fa-graduation-cap, .fa-user, .fa-id-card, .fa-location-dot, .fa-phone, .fa-envelope, .fa-graduation-cap, .fa-pen-clip, .fa-magnifying-glass{
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.btn{
+    margin: 25px;
+}
+
+.text-responsive {
+    font-size: calc(100% + 1vw + 1vh);
+  }
