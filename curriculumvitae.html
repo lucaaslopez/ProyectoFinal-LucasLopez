@@ -18,7 +18,7 @@
           <div class="col align-self-right">
             <img id="fotocv" alt="Foto CV">
           </div>
-          <div class="col align-self-left">
+          <div class="col align-self-left align-name">
             <h1 id="nombre"></h1>
         </div>
     </div>
@@ -42,6 +42,7 @@
             <div class="col">
                 <p class="class-titulos"><i class="fa-solid fa-phone fa-fw"></i>Teléfonos:</p>
                 <span class="class-datos" id="telefonos"></span>
+                
             </div>
             <div class="col">
                 <p class="class-titulos"><i class="fa-solid fa-envelope fa-fw"></i>Email:</p>
@@ -122,11 +123,11 @@
         const obj = JSON.parse(persona);
         console.log(obj);
         document.getElementById("nombre").innerHTML = obj.name.first+" "+obj.name.last;
-        document.getElementById("domicilio").innerHTML = obj.location.street.name+" "+obj.location.street.number+", "+obj.location.city+", "+obj.location.state+", "+obj.location.country;
+        document.getElementById("domicilio").innerHTML = obj.location.street.name+" "+obj.location.street.number+". <br>"+obj.location.city+", "+obj.location.state+", "+obj.location.country;
         document.getElementById("documento").innerHTML = obj.id.name+" "+obj.id.value;
         //document.getElementById("Nacionalidad").innerHTML = obj.nat;
         document.getElementById("email").innerHTML = obj.email;
-        document.getElementById("telefonos").innerHTML = "telefono Fijo " + obj.phone +", "+"Celular "+obj.cell;
+        document.getElementById("telefonos").innerHTML = "telefono Fijo " + obj.phone +", "+"<br>Celular "+obj.cell;
         document.getElementById("fotocv").src= obj.picture.large;
 
    </script>

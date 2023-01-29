@@ -14,7 +14,7 @@
 
 .class-titulos{
     font-size: 30px;
-    color: grey;
+    color: red;
     font-weight: normal ;
     padding-top: 20px;
     margin-bottom: 0px;
@@ -44,6 +44,11 @@ h2{
     margin: 10px auto 10px 10px;
     justify-content: start;
     width: 50px;
+}
+
+.align-name{
+    display: flex;
+    align-items: center;
 }
 
 .fa-graduation-cap, .fa-user, .fa-id-card, .fa-location-dot, .fa-phone, .fa-envelope, .fa-graduation-cap, .fa-pen-clip, .fa-magnifying-glass{
