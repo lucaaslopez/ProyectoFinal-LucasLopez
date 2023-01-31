@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,200;0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="<img src="https://img.icons8.com/pastel-glyph/64/null/add-file--v1.png"/>"
     <title>Curriculum Vitae</title>
 </head>
 <body>
@@ -50,75 +51,58 @@
             </div>
         </div>
     </div>
-    <!--<div class="container">
-        <div class="row row-cols-2">
-            <div class="col"><p class="class-titulos"><i class="fa-regular fa-id-card fa-fw"></i>documento:</p>
-                <span class="class-datos" id="documento"></span></div>
-            <div class="col"><p class="class-titulos"><i class="fa-solid fa-location-dot fa-fw"></i>domicilio:</p>
-                <span class="class-datos" id="domicilio"></span></div>
-            <div class="col">p class="class-titulos"><i class="fa-solid fa-phone fa-fw"></i>telefonos:</p>
-                <span class="class-datos" id="telefonos"></span></div>
-            <div class="col"><p class="class-titulos"><i class="fa-solid fa-envelope fa-fw"></i>email:</p>
-                <span class="class-datos" id="email"></span>
-        </div>
-    </div>-->
     
-
-
-    <!--<dl>
-        <dt class="class-titulos"><i class="fa-regular fa-id-card fa-fw"></i>      documento:</dt>
-        <dd class="class-datos" id="documento"></dd>
-        <dt class="class-titulos"><i class="fa-solid fa-location-dot fa-fw"></i>       domicilio:</dt>
-        <dd class="class-datos" id="domicilio"></dd>
-        <dt class="class-titulos"><i class="fa-solid fa-phone fa-fw"></i>      telefonos:</dt>
-        <dd class="class-datos" id="telefonos"></dd>
-        <dt class="class-titulos"><i class="fa-solid fa-envelope fa-fw"></i>    email:</dt>
-        <dd class="class-datos" id="email"></dd>
-        <dt class="class-titulos"><i class="fa-solid fa-flag fa-fw"></i>    Nacionalidad:</dt>
-        <dd class="class-datos" id="Nacionalidad"></dd>
-    </dl>-->
 
     <div class="d-grid">
         <button class="btn btn-light btn-sm" type="button"><h2><i class="fa-solid fa-graduation-cap fa-fw"></i>Estudios</h2></button>
-    </div>
-
-    <div class="row">
-        <div class="col">
-            <p class="class-titulos"><i class="fa-solid fa-pen-clip fa-fw"></i></i>Universitario</p>
-            <span class="class-datos">Lorem ipsum dolor sit amet.2007-2013.</span>
-        </div>
-        <div class="col">
-            <p class="class-titulos"><i class="fa-solid fa-pen-clip fa-fw"></i></i>Secundario</p>
-            <span class="class-datos">Lorem ipsum dolor sit amet.2003-2006.</span>
+    
+        <div class="desplegables">
+            <div class="row">
+                <div class="col">
+                    <p class="class-titulos"><i class="fa-solid fa-pen-clip fa-fw"></i></i>Universitario</p>
+                    <span class="class-datos">Lorem ipsum dolor sit amet.2007-2013.</span>
+                </div>
+                <div class="col">
+                    <p class="class-titulos"><i class="fa-solid fa-pen-clip fa-fw"></i></i>Secundario</p>
+                    <span class="class-datos">Lorem ipsum dolor sit amet.2003-2006.</span>
+                </div>
+            </div>
         </div>
     </div>
     
-    <!--<dl>
-        <dt class="class-titulos"><i class="fa-solid fa-pen-clip"></i></i>       Universitario</dt>
-        <dd class="class-datos">Lorem ipsum dolor sit amet.2007-2013</dd>
-        <dt class="class-titulos"><i class="fa-solid fa-pen-clip"></i></i>       Secundario</dt>
-        <dd class="class-datos">Lorem ipsum dolor sit amet.2003-2006</dd>
-    </dl>-->
 
     <div class="d-grid">
-        <button class="btn btn-light btn-sm" type="button"><h2><i class="fa-solid fa-magnifying-glass fa-fw"></i>Conocimientos</h2></button>
-    </div>
-
-        <p class="class-datos"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel justo aliquam, euismod odio ac, condimentum purus. Phasellus vitae urna.</p>
-        <ul class="class-datos">
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-            <li>Donec a dui semper, rutrum nisi nec, tincidunt justo.</li>
-            <li>Donec nec risus iaculis, laoreet quam ac, euismod eros.</li>
-            <li>Fusce vitae nibh eu ante venenatis venenatis.</li>
-            <li>Phasellus ultrices urna sed nunc porttitor porttitor ut ut enim.</li>
-        </ul>
-    </div>
+        <button class="pulsable btn btn-light btn-sm" type="button"><h2><i class="fa-solid fa-magnifying-glass fa-fw"></i>Conocimientos</h2></button>
     
-    <!--<div class="badge bg-primary text-wrap" style="width: 6rem;">
-        This text should wrap.
-    </div>-->
+        <div class="desplegables">
+            <p class="class-datos"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel justo aliquam, euismod odio ac, condimentum purus. Phasellus vitae urna.</p>
+            <ul class="class-datos">
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li>Donec a dui semper, rutrum nisi nec, tincidunt justo.</li>
+                <li>Donec nec risus iaculis, laoreet quam ac, euismod eros.</li>
+                <li>Fusce vitae nibh eu ante venenatis venenatis.</li>
+                <li>Phasellus ultrices urna sed nunc porttitor porttitor ut ut enim.</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        var elementosBtn = document.getElementsByClassName("btn");
+        var i;
 
-   <script>
+        for (i = 0; i < elementosBtn.length; i++) {
+            elementosBtn[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                console.log ("aca",this)
+                var desplegables = this.nextElementSibling;
+                if (desplegables.style.display === "block") {
+                    desplegables.style.display = "none";
+                } else {
+                    desplegables.style.display = "block";
+                }
+            });
+        }
+        
+        
         const persona = '{"name":{"title":"Mr","first":"Eugenio","last":"Duran"},"location":{"street":{"number":8171,"name":"Calle de La Almudena"},"city":"Mérida","state":"Canarias","country":"Spain","postcode":89285,"coordinates":{"latitude":"-36.6434","longitude":"-24.6740"},"timezone":{"offset":"-10:00","description":"Hawaii"}},"email":"eugenio.duran@example.com","phone":"981-283-717","cell":"675-480-702","id":{"name":"DNI","value":"15873262-B"},"picture":{"large":"https://randomuser.me/api/portraits/men/79.jpg","medium":"https://randomuser.me/api/portraits/med/men/79.jpg","thumbnail":"https://randomuser.me/api/portraits/thumb/men/79.jpg"},"nat":"ES"}'
         const obj = JSON.parse(persona);
         console.log(obj);
@@ -130,7 +114,7 @@
         document.getElementById("telefonos").innerHTML = "telefono Fijo " + obj.phone +", "+"<br>Celular "+obj.cell;
         document.getElementById("fotocv").src= obj.picture.large;
 
-   </script>
+    </script>
 
 
 </body>
