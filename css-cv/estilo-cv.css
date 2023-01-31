@@ -14,7 +14,7 @@
 
 .class-titulos{
     font-size: 30px;
-    color: red;
+    color: grey;
     font-weight: normal ;
     padding-top: 20px;
     margin-bottom: 0px;
@@ -60,6 +60,7 @@ h2{
 
 .btn{
     margin: 25px;
+    cursor: pointer;
 }
 
 .text-responsive {
@@ -68,4 +69,10 @@ h2{
 
 section col {
     width: 50px;
+}
+
+.desplegables{
+    padding: 0px 20px;
+    display: none;
+    overflow: hidden;
 }
