@@ -4,21 +4,20 @@
     box-sizing: border-box;
 }
 
-.class-datos{
+.datos{
     color: black;
     font-style: italic;
     font-weight: normal;
     font-size: 25px;
-    padding-top: 0px;
+   /*padding-top: 0px;*/
 }
 
-.class-titulos{
+.titulos{
     font-size: 30px;
     color: grey;
     font-weight: normal ;
     padding-top: 20px;
     margin-bottom: 0px;
-    vertical-align: middle;
 }
 
 h2{
@@ -27,23 +26,39 @@ h2{
     font-weight: bold;
     margin: 0;
     vertical-align:middle;
+    justify-content:right;
+}
+p{
+    margin: 0px 25px;
 }
 
-.class-datos li{
+.datos li{
     list-style-position: inside;
     text-align: center;
 }
 
-#fotocv{
-    display: block;
-    margin: 10px 10px 10px auto;
+.datos-txt{
+    padding-top: 20px;
 }
 
-#nombre{
-    display: block;
-    margin: 10px auto 10px 10px;
-    justify-content: start;
+.row-personal{
+margin-top:  10px;
+display: flex;
+align-items: center;
+}
+
+.pic-cv{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.name-cv{
+    display: flex;
+    justify-content: flex-start;
     width: 50px;
+    padding: 10px;
+
 }
 
 .align-name{
@@ -51,15 +66,19 @@ h2{
     align-items: center;
 }
 
-.fa-graduation-cap, .fa-user, .fa-id-card, .fa-location-dot, .fa-phone, .fa-envelope, .fa-graduation-cap, .fa-pen-clip, .fa-magnifying-glass{
+.fa-graduation-cap, .fa-user, .fa-id-card, .fa-location-dot, .fa-phone, .fa-envelope, .fa-pen-clip, .fa-magnifying-glass{
     margin-right: 20px;
     margin-left: 20px;
     margin-top: 0px;
     margin-bottom: 0px;
 }
 
+/*.fa-angle-down{
+    justify-content: start;
+}*/
+
 .btn{
-    margin: 25px;
+    margin-top:10px;
     cursor: pointer;
 }
 
@@ -67,12 +86,36 @@ h2{
     font-size: calc(100% + 1vw + 1vh);
   }
 
-section col {
+/*section col {
     width: 50px;
+}*/
+
+.contenido{
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    background-color:rgb(248, 248, 248);
 }
 
-.desplegables{
-    padding: 0px 20px;
-    display: none;
-    overflow: hidden;
+.contentBx{
+    padding: 0px 10px;
+}
+
+.contentBx.active .contenido{
+   height: 100%;
+   transition: all 0.5s ease-in-out;
+}
+
+.contentBx.active .btn-arrow{
+    transform:rotate(180deg) ;
+    transition: all 0.5s ease-in-out;
+}
+
+.row-btn{
+    align-items: center;
+    display: flex;
+}
+
+.contacto{
+    line
 }

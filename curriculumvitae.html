@@ -10,98 +10,157 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,200;0,400;1,300&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="<img src="https://img.icons8.com/pastel-glyph/64/null/add-file--v1.png"/>"
+    <link rel="shortcut icon" href="https://img.icons8.com/fluency-systems-regular/48/null/search-account.png" type="image/x-icon" />
     <title>Curriculum Vitae</title>
 </head>
 <body>
+        
     <div class="container text-center">
-        <div class="row">
-          <div class="col align-self-right">
-            <img id="fotocv" alt="Foto CV">
-          </div>
-          <div class="col align-self-left align-name">
-            <h1 id="nombre"></h1>
-        </div>
-    </div>
-    
-    
-    <div class="d-grid">
-        <button class="btn btn-light btn-sm gap-2" type="button"><h2><i class="fa-solid fa-user fa-fw"></i>Datos personales</h2></button>
-    </div>
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col">
-                <p class="class-titulos"><i class="fa-regular fa-id-card fa-fw"></i>Documento:</p>
-                <span class="class-datos" id="documento"></span>
+        <div class="row-personal">
+            <div class="col-6 pic-cv">
+                    <img id="fotocv" alt="Foto CV">
             </div>
-        <div class="col">
-                <p class="class-titulos"><i class="fa-solid fa-location-dot fa-fw"></i>Domicilio:</p>
-                <span class="class-datos" id="domicilio"></span>
-        </div>
-        <div class="row">
-            <div class="col">
-                <p class="class-titulos"><i class="fa-solid fa-phone fa-fw"></i>Teléfonos:</p>
-                <span class="class-datos" id="telefonos"></span>
-                
-            </div>
-            <div class="col">
-                <p class="class-titulos"><i class="fa-solid fa-envelope fa-fw"></i>Email:</p>
-                <span class="class-datos" id="email"></span>
+            <div class="col-6 name-cv">
+                <h1 id="nombre"></h1>
             </div>
         </div>
     </div>
     
-
-    <div class="d-grid">
-        <button class="btn btn-light btn-sm" type="button"><h2><i class="fa-solid fa-graduation-cap fa-fw"></i>Estudios</h2></button>
     
-        <div class="desplegables">
-            <div class="row">
-                <div class="col">
-                    <p class="class-titulos"><i class="fa-solid fa-pen-clip fa-fw"></i></i>Universitario</p>
-                    <span class="class-datos">Lorem ipsum dolor sit amet.2007-2013.</span>
+    <div class="acordeon">
+        <div class="d-grid contentBx">
+            <button class="btn btn-light btn-sm" type="button">
+                <div class="row-btn">
+                    <div class="col-6 offset-3  btn-text">
+                        <h2><i class="fa-solid fa-user fa-fw"></i>Datos Personales</h2>
+                    </div>
+                    <div class="col-1 offset-2 btn-arrow">
+                        <i class=" fa-solid fa-chevron-up fa-fw"></i>
+                    </div>
                 </div>
-                <div class="col">
-                    <p class="class-titulos"><i class="fa-solid fa-pen-clip fa-fw"></i></i>Secundario</p>
-                    <span class="class-datos">Lorem ipsum dolor sit amet.2003-2006.</span>
+            </button>
+            <div class="contenido">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col col-5 offset-1 titulos">
+                            <p><i class="fa-regular fa-id-card fa-fw"></i>Documento:</p>
+                            <span class="datos" id="documento"></span>
+                        </div>
+                    
+                        <div class="col col-5 titulos">
+                                <p><i class="fa-solid fa-location-dot fa-fw"></i>Domicilio:</p>
+                                <span class="datos" id="domicilio"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-5 offset-1 titulos">
+                            <p class="class-titulos"><i class="fa-solid fa-phone fa-fw"></i>Teléfonos:</p>
+                            <span class="datos" id="telefonos"></span>
+                            
+                        </div>
+                        <div class="col-5 titulos">
+                            <p class="class-titulos"><i class="fa-solid fa-envelope fa-fw"></i>Email:</p>
+                            <span class="datos" id="email"></span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
     
 
-    <div class="d-grid">
-        <button class="pulsable btn btn-light btn-sm" type="button"><h2><i class="fa-solid fa-magnifying-glass fa-fw"></i>Conocimientos</h2></button>
-    
-        <div class="desplegables">
-            <p class="class-datos"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel justo aliquam, euismod odio ac, condimentum purus. Phasellus vitae urna.</p>
-            <ul class="class-datos">
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                <li>Donec a dui semper, rutrum nisi nec, tincidunt justo.</li>
-                <li>Donec nec risus iaculis, laoreet quam ac, euismod eros.</li>
-                <li>Fusce vitae nibh eu ante venenatis venenatis.</li>
-                <li>Phasellus ultrices urna sed nunc porttitor porttitor ut ut enim.</li>
-            </ul>
+    <div class="acordeon">
+        <div class="d-grid contentBx">
+            <button class="btn btn-light btn-sm" type="button">
+                <div class="row-btn">
+                    <div class="col-6 offset-3  btn-text">
+                        <h2><i class="fa-solid fa-graduation-cap fa-fw"></i>Estudios</h2>
+                    </div>
+                    <div class="col-1 offset-2 btn-arrow">
+                        <i class=" fa-solid fa-chevron-up fa-fw"></i>
+                    </div>
+                </div> 
+            </button>
+            <div class="contenido">
+                <div class="row">
+                    <div class="col-5 offset-1 titulos">
+                        <p><i class="fa-solid fa-pen-clip fa-fw"></i></i>Universitario</p>
+                        <span class="datos">Lorem ipsum dolor sit amet.<br>2007-2013.</span>
+                    </div>
+                    <div class="col-5 titulos">
+                        <p><i class="fa-solid fa-pen-clip fa-fw"></i></i>Secundario</p>
+                        <span class="datos">Lorem ipsum dolor sit amet.<br>2003-2006.</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+    <div class="acordeon">
+        <div class="d-grid contentBx">
+            <button class="pulsable btn btn-light btn-sm" type="button">
+                <div class="row-btn">
+                    <div class="col-6 offset-3  btn-text">
+                        <h2><i class="fa-solid fa-magnifying-glass fa-fw"></i>Conocimientos</h2>
+                    </div>
+                    <div class="col-1 offset-2 btn-arrow">
+                        <i class=" fa-solid fa-chevron-up fa-fw"></i>
+                    </div>
+                </div>
+            </button>
+            <div class="contenido">
+                <p class="datos datos-txt"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel justo aliquam, euismod odio ac, condimentum purus. Phasellus vitae urna.</p>
+                <ul class="datos">
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                    <li>Donec a dui semper, rutrum nisi nec, tincidunt justo.</li>
+                    <li>Donec nec risus iaculis, laoreet quam ac, euismod eros.</li>
+                    <li>Fusce vitae nibh eu ante venenatis venenatis.</li>
+                    <li>Phasellus ultrices urna sed nunc porttitor porttitor ut ut enim.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="acordeon"> <!--pulsable-->
+        <div class="d-grid contentBx container-fluid">   <!--contenido-boton-->
+            <button class="btn btn-light btn-sm" type="button"> 
+                <div class="row-btn">
+                    <div class="col-6 offset-3  btn-text">
+                        <h2><i class="fa-solid fa-magnifying-glass fa-fw"></i>Conocimientos</h2>
+                    </div>
+                    <div class="col-1 offset-2 btn-arrow">
+                        <i class=" fa-solid fa-chevron-up fa-fw"></i>
+                    </div>
+                </div>
+            </button>
+            <div class="contenido"><!--desplegables-->
+                <p class="datos datos-txt"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel justo aliquam, euismod odio ac, condimentum purus. Phasellus vitae urna.</p>
+                <ul class="datos">
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                    <li>Donec a dui semper, rutrum nisi nec, tincidunt justo.</li>
+                    <li>Donec nec risus iaculis, laoreet quam ac, euismod eros.</li>
+                    <li>Fusce vitae nibh eu ante venenatis venenatis.</li>
+                    <li>Phasellus ultrices urna sed nunc porttitor porttitor ut ut enim.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+   
     <script>
-        var elementosBtn = document.getElementsByClassName("btn");
-        var i;
-
-        for (i = 0; i < elementosBtn.length; i++) {
-            elementosBtn[i].addEventListener("click", function() {
+        let elementosAcordeon = document.getElementsByClassName("contentBx");
+        
+        for (let i = 0; i < elementosAcordeon.length; i++) {
+            elementosAcordeon[i].addEventListener("click", function() {
                 this.classList.toggle("active");
-                console.log ("aca",this)
-                var desplegables = this.nextElementSibling;
-                if (desplegables.style.display === "block") {
-                    desplegables.style.display = "none";
+                const elementosAcordeon = this.nextElementSibling;
+                if (contenido.style.display === "block") {
+                    contenido.style.display = "none";
                 } else {
-                    desplegables.style.display = "block";
+                    contenido.style.display = "block";
                 }
             });
         }
-        
         
         const persona = '{"name":{"title":"Mr","first":"Eugenio","last":"Duran"},"location":{"street":{"number":8171,"name":"Calle de La Almudena"},"city":"Mérida","state":"Canarias","country":"Spain","postcode":89285,"coordinates":{"latitude":"-36.6434","longitude":"-24.6740"},"timezone":{"offset":"-10:00","description":"Hawaii"}},"email":"eugenio.duran@example.com","phone":"981-283-717","cell":"675-480-702","id":{"name":"DNI","value":"15873262-B"},"picture":{"large":"https://randomuser.me/api/portraits/men/79.jpg","medium":"https://randomuser.me/api/portraits/med/men/79.jpg","thumbnail":"https://randomuser.me/api/portraits/thumb/men/79.jpg"},"nat":"ES"}'
         const obj = JSON.parse(persona);
