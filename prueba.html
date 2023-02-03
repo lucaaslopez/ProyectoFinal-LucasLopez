@@ -32,11 +32,15 @@
       display: none;
       background-color: white;
       overflow: hidden;
+      transition: 10s ease;
     }
+
+    .active.accordion .panel{
+      max-height: 50px;
+
+    }
+
     </style>
-    
-    
-    <h2>Accordion</h2>
     
     <button class="accordion">Section 1</button>
     <div class="panel">
