@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css-cv/estilo-cv.css" />
+    <script src="https://kit.fontawesome.com/c96dad0e00.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,200;0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://img.icons8.com/fluency-systems-regular/48/null/search-account.png" type="image/x-icon" />
+    <title>Curriculum Vitae</title>
+</head>
+<body>
+    <div class="background container-fluid">
+        
+        <div class="recuadro container col-10"> 
+
+            <div class="container-fluid col-11 text-center encabezado">
+                <div class="row-personal">
+                    <div class="col-6 pic-cv">
+                            <img id="fotocv" alt="Foto CV">
+                    </div>
+                    <div class="col-6 name-cv">
+                        <h1 id="nombre"></h1>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="desplegable container-fluid col-11">
+                <button class="btn btn-secondary btn-sm d-grid container-fluid pulsable" type="button"> 
+                    <div class="row-btn">
+                        <div class="col-6 offset-3">
+                            <h2><i class="fa-solid fa-user fa-fw"></i>Datos Personales</h2>
+                        </div>
+                        <div class="col-1 offset-2 btn-arrow">
+                            <i class=" fa-solid fa-chevron-up fa-fw"></i>
+                        </div>
+                    </div>
+                </button>
+                <div class="contenido">
+                    <div class="container-fluid datos-contenido">
+                        <div class="row">
+                            <div class="col col-5 offset-1 titulos">
+                                <p><i class="fa-solid fa-id-card fa-fw"></i>Documento:</p>
+                                <span id="documento"></span>
+                            </div>
+                            <div class="col col-5 titulos">
+                                <p><i class="fa-solid fa-location-dot fa-fw"></i>Domicilio:</p>
+                                <span id="domicilio"></span>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-5 offset-1 titulos">
+                                <p><i class="fa-solid fa-phone fa-fw"></i>Teléfonos:</p>
+                                <span id="telefonos"></span>
+                            </div>
+                            <div class="col-5 titulos">
+                                <p><i class="fa-solid fa-envelope fa-fw"></i>Email:</p>
+                                <span id="email"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <div class="desplegable container-fluid col-11">
+                <button class="btn btn-light btn-sm d-grid container-fluid pulsable" type="button"> 
+                    <div class="row-btn">
+                        <div class="col-6 offset-3">
+                            <h2><i class="fa-solid fa-graduation-cap fa-fw"></i>Estudios</h2>
+                        </div>
+                        <div class="col-1 offset-2 btn-arrow">
+                            <i class=" fa-solid fa-chevron-up fa-fw"></i>
+                        </div>
+                    </div>
+                </button>
+                <div class="contenido">
+                    <div class="row datos-contenido">
+                        <div class="col-5 offset-1 titulos">
+                            <p><i class="fa-solid fa-pen-clip fa-fw"></i></i>Universitario</p>
+                            <span>Lorem ipsum dolor sit amet.<br>2007-2013.</span>
+                        </div>
+                        <div class="col-5 titulos">
+                            <p><i class="fa-solid fa-pen-clip fa-fw"></i></i>Secundario</p>
+                            <span>Lorem ipsum dolor sit amet.<br>2003-2006.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        
+            <div class="desplegable container-fluid col-11">
+                <button class="btn btn-light btn-sm d-grid container-fluid pulsable" type="button"> 
+                    <div class="row-btn">
+                        <div class="col-6 offset-3">
+                            <h2><i class="fa-solid fa-magnifying-glass fa-fw"></i>Conocimientos</h2>
+                        </div>
+                        <div class="col-1 offset-2 btn-arrow">
+                            <i class=" fa-solid fa-chevron-up fa-fw"></i>
+                        </div>
+                    </div>
+                </button>
+                <div class="contenido">
+                    <div class="datos-contenido conocimientos">                                           
+                        <p class="titulos">Idiomas</p>                       
+                        <ul class="row-conocimientos">
+                            <li>Idioma 1. Avanzado.</li>
+                            <li>Idioma 2. Intermedio.</li>
+                        </ul>
+                        <hr>                                                       
+                        <p class="titulos">Informática</p>                        
+                        <ul class="row-conocimientos">
+                            <li>Software 1. Lorem ipsum.</li>
+                            <li>Software 2. Lorem ipsum.</li> 
+                            <li>Software 2. Lorem ipsum.</li>
+                        </ul>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel consectetur augue. Aliquam vitae egestas.</span>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis fringilla, arcu vitae sagittis pulvinar, elit.</span>
+                        <hr>                                            
+                        <p class="titulos">Otras áreas</p>
+                        <ul class="row-conocimientos">
+                            <li>Vestibulum mollis lacus vitae massa vestibulum bibendum.</li>
+                            <li>Quisque luctus nisi ac nisl auctor bibendum.</li> 
+                            <li>Etiam a lacus lacinia, convallis felis ac, efficitur elit.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="desplegable container-fluid col-11">
+                <button class="btn btn-light btn-sm d-grid container-fluid pulsable" type="button"> 
+                    <div class="row-btn">
+                        <div class="col-6 offset-3">
+                            <h2><i class="fa-solid fa-briefcase fa-fw"></i>Experiencia profesional</h2>
+                        </div>
+                        <div class="col-1 offset-2 btn-arrow">
+                            <i class=" fa-solid fa-chevron-up fa-fw"></i>
+                        </div>  
+                    </div>
+                </button>
+                <div class="contenido">
+                    <div class="datos-contenido">
+                        <div class="row-experiencia">                           
+                            <p class="titulos col-4">Empresa 1</p>
+                            <p class="datos col-4">20XX/20XX</p>    
+                        </div>
+                        <span >Phasellus ultrices urna sed nunc porttitor porttitor ut ut enim.</span>
+                        <hr>
+                        <div class="row-experiencia">                           
+                            <p class="titulos col-4">Empresa 2</p>
+                            <p class="datos col-4">20XX/20XX</p> 
+                        </div>
+                        <span >Phasellus ultrices urna sed nunc porttitor porttitor ut ut enim.</span>
+                        <hr>
+                        <div class="row-experiencia">                           
+                            <p class="titulos col-4">Empresa 3</p>
+                            <p class="datos col-4">20XX/Actualidad</p> 
+                        </div>
+                        <span >Phasellus ultrices urna sed nunc porttitor porttitor ut ut enim.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="desplegable container-fluid col-11">
+                <button class="btn btn-light btn-sm d-grid container-fluid pulsable" type="button"> 
+                    <div class="row-btn">
+                    <div class="col-6 offset-3">
+                        <h2><i class="fa-solid fa-inbox fa-fw"></i>Contacto</h2> 
+                    </div>
+                    <div class="col-1 offset-2 btn-arrow">
+                        <i class=" fa-solid fa-chevron-up fa-fw"></i>
+                    </div>
+                    </div>
+                </button>
+                <div class="contenido">
+                    <form action="" method="post" class="form-txt">
+                        <div class="form-group row">
+                            <label for="formName" class="col-2 col-form-label">NOMBRE</label>
+                            <div class="col-6 form-celda">
+                                <input type="text" class="form-control" name="nombre" id="formName" placeholder="Ingrese su nombre">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="formEmpresa" class="col-2 col-form-label">EMPRESA</label>
+                            <div class="col-6 form-celda">
+                                <input type="text" class="form-control" name="empresa" id="formEmpresa" placeholder="Ingrese el nombre de la empresa">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="formEmail" class="col-2 col-form-label">E-MAIL</label>
+                            <div class="col-6 form-celda">
+                                <input type="email" class="form-control" name="email" id="formEmail" placeholder="Ingrese el email de contacto, este campo es obligatorio" required/>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="formTelefono" class="col-2 col-form-label">TELÉFONO</label>
+                            <div class="col-6 form-celda">
+                                <input type="tel" class="form-control" name="telefono" id="formTelefono" placeholder="Ingrese el teléfono de contacto">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="formMensaje" class="col-2 col-form-label">MENSAJE</label>
+                            <div class="col-6 form-celda">
+                                <textarea class="form-control" name="mensaje" id="formMensaje" placeholder="Ingrese si desea un mensaje"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <button type="submit" class="btn btn-secondary col-8">ENVIAR</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    <script src="js-cv/cv.js"></script>
+
+
+</body>
+</html>
