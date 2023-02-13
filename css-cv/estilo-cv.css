@@ -4,9 +4,29 @@
     box-sizing: border-box;
 }
 
+.background{
+    /*background-color: rgba(252, 191, 51, 0.801);*/
+    /*background-color: rgb(255, 182, 18);*/
+    background-color: rgba(255,182,18,1);
+    opacity: 0.8;
+    background-image:  radial-gradient(#6c757d 0.75px, transparent 0.75px), radial-gradient(#6c757d 0.75px, rgba(255,182,18,1) 0.75px);
+    background-size: 30px 30px;
+    background-position: 0 0,15px 15px;
+    height: 100vh;
+    overflow: auto;
+}
+
+.recuadro{
+    border-radius: 5px;
+    background-color: rgb(161, 161, 155);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 30px 0 30px 0;
+}
+
 .datos{
-    color: black;
-    font-style: italic;
+    color: rgb(3,36,54);
+    font-style: normal;
     font-weight: normal;
     font-size: 25px;
    /*padding-top: 0px;*/
@@ -14,20 +34,35 @@
 
 .titulos{
     font-size: 30px;
-    color: grey;
+    color: white;
     font-weight: normal ;
-    padding-top: 20px;
+    /*padding-top: 20px;*/
     margin-bottom: 0px;
+}
+
+.txt-form{
+    font-size: 20px;
+    color: rgb(3,36,54);;
+    font-weight: normal ;
+    /*padding-top: 20px;*/
+    margin-bottom: 0px;
+}
+h1{
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: left;
+    color:rgb(3,36,54);
 }
 
 h2{
     font-size: 30px;
-    color: black;
-    font-weight: bold;
+    color:  rgb(255, 182, 18);
+    font-weight: normal;
     margin: 0;
     vertical-align:middle;
     justify-content:right;
 }
+
 p{
     margin: 0px 25px;
 }
@@ -37,14 +72,13 @@ p{
     text-align: center;
 }
 
-.datos-txt{
-    padding-top: 20px;
+.datos-contenido{
+    padding: 30px 20px 30px 20px;
 }
 
 .row-personal{
-margin-top:  10px;
-display: flex;
-align-items: center;
+    margin-top:  10px;
+    display: flex;
 }
 
 .pic-cv{
@@ -58,7 +92,6 @@ align-items: center;
     justify-content: flex-start;
     width: 50px;
     padding: 10px;
-
 }
 
 .align-name{
@@ -66,11 +99,12 @@ align-items: center;
     align-items: center;
 }
 
-.fa-graduation-cap, .fa-user, .fa-id-card, .fa-location-dot, .fa-phone, .fa-envelope, .fa-pen-clip, .fa-magnifying-glass{
+.fa-graduation-cap, .fa-user, .fa-id-card, .fa-location-dot, .fa-phone, .fa-envelope, .fa-pen-clip, .fa-magnifying-glass, .fa-chevron-up{
     margin-right: 20px;
     margin-left: 20px;
     margin-top: 0px;
     margin-bottom: 0px;
+    color: rgb(255, 182, 18);;
 }
 
 /*.fa-angle-down{
@@ -78,35 +112,67 @@ align-items: center;
 }*/
 
 .btn{
-    margin-top:10px;
+    margin: 5px 0 5px 0;
     cursor: pointer;
 }
 
-.text-responsive {
-    font-size: calc(100% + 1vw + 1vh);
-  }
 
-/*section col {
-    width: 50px;
-}*/
-
-.contenido{
-    height: 0;
-    overflow: hidden;
-    transition: 0.5s;
-    background-color:rgb(248, 248, 248);
+.encabezado{
+    border-radius: 5px;
+    background-image: linear-gradient(90deg,transparent, rgba(255, 255, 255, 0.452) ,transparent);
 }
 
-.contentBx{
+.contenido{
+    transition: all 1s ease-in-out;
+    display: block;
+    /*visibility: visible;*/
+    /*background-color:rgb(240, 240, 240);*/
+    background-color:  rgb(255, 182, 18);
+    /*background-color:rgba(255, 255, 255, 0.24);*/
+    /*background-image: linear-gradient(transparent, rgb(209, 209, 209));*/
+    max-height: 0;
+    overflow: hidden;
+    /*border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;*/
+    border-radius: 5px;
+    
+}
+
+/* 
+    overflow: hidden;
+    transition: 0.5s;
+    background-color:rgb(248, 248, 248);*/
+
+.contenido .fa-solid {
+    color: white;
+}
+    
+.pulsable.active + .contenido{
+    transition: all 1s ease-in-out;
+    max-height: 500px;
+    margin: 10px 0 10px 0;
+}
+
+.pulsable.active + .background{
+    max-height: 2500px;
+}
+
+
+/*.contentBx{
     padding: 0px 10px;
 }
 
 .contentBx.active .contenido{
    height: 100%;
    transition: all 0.5s ease-in-out;
-}
+}*/
 
-.contentBx.active .btn-arrow{
+/*.contentBx.active .btn-arrow{
+    transform:rotate(180deg) ;
+    transition: all 0.5s ease-in-out;
+}*/
+
+.pulsable.active .btn-arrow{
     transform:rotate(180deg) ;
     transition: all 0.5s ease-in-out;
 }
@@ -126,5 +192,19 @@ align-items: center;
 .row-btn{
     align-items: center;
     display: flex;
+}
+
+.desplegable{
+    padding: 0
+}
+
+.form-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.celda-form{
+    padding-right: 0;
 }
 

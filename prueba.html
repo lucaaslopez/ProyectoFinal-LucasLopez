@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" type="text/css" href="css-cv/estilo-cv.css" />
+    <!--<link rel="stylesheet" type="text/css" href="css-cv/estilo-cv.css" />-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
     
     <style>
-    .accordion {
+    .pulsable {
       background-color: #eee;
       color: #444;
       cursor: pointer;
@@ -23,37 +23,38 @@
       transition: 0.4s;
     }
     
-    .active, .accordion:hover {
-      background-color: #ccc; 
+    .active, .pulsable:hover {
+      background-color: green; 
     }
     
-    .panel {
+    .contenido {
       padding: 0 18px;
       display: none;
-      background-color: white;
+      background-color: red;
       overflow: hidden;
       transition: 10s ease;
     }
 
-    .active.accordion .panel{
+    .active.pulsable .contenido{
       max-height: 50px;
-
+      transition: all 0.5s ease-in-out;
+      background-color: aqua;
     }
 
     </style>
     
-    <button class="accordion">Section 1</button>
-    <div class="panel">
+    <button class="pulsable">Section 1</button>
+    <div class="contenido">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
     
-    <button class="accordion">Section 2</button>
-    <div class="panel">
+    <button class="pulsable">Section 2</button>
+    <div class="contenido">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
     
-    <button class="accordion">Section 3</button>
-    <div class="panel">
+    <button class="pulsable">Section 3</button>
+    <div class="contenido">
         <p class="class-datos"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel justo aliquam, euismod odio ac, condimentum purus. Phasellus vitae urna.</p>
         <ul class="class-datos">
             <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
@@ -61,20 +62,35 @@
             <li>Donec nec risus iaculis, laoreet quam ac, euismod eros.</li>
             <li>Fusce vitae nibh eu ante venenatis venenatis.</li>
             <li>Phasellus ultrices urna sed nunc porttitor porttitor ut ut enim.</li>
-        </ul>    </div>
-    
+        </ul>    
+    </div>
+
+    <button class="btn btn-light btn-sm d-grid container-fluid pulsable" type="button"> 
+      <div class="row-btn">
+        <div class="col-6 offset-3  btn-text">
+          <h2><i class="fa-solid fa-magnifying-glass fa-fw"></i>Conocimientos</h2>
+        </div>
+        <div class="col-1 offset-2 btn-arrow">
+          <i class=" fa-solid fa-chevron-up fa-fw"></i>
+        </div>
+      </div>
+    </button>
+    <div class="contenido">
+      <p class="class-datos"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel justo aliquam, euismod odio ac, condimentum purus. Phasellus vitae urna.</p>
+    </div>
+
     <script>
-    var acc = document.getElementsByClassName("accordion");
+    var acc = document.getElementsByClassName("pulsable");
     var i;
     
     for (i = 0; i < acc.length; i++) {
       acc[i].addEventListener("click", function() {
         this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-          panel.style.display = "none";
+        var contenido = this.nextElementSibling;
+        if (contenido.style.display === "block") {
+          contenido.style.display = "none";
         } else {
-          panel.style.display = "block";
+          contenido.style.display = "block";
         }
       });
     }
