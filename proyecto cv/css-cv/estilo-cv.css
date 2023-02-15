@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+
+
 .background{
     background-color: rgba(255,182,18,1);
     opacity: 0.8;
@@ -12,6 +14,7 @@
     background-position: 0 0,15px 15px;
     height: 100vh;
     overflow: auto;
+    cursor: default;
 }
 
 .recuadro{
@@ -116,7 +119,7 @@ p{
 }
   
 .pulsable.active + .contenido{
-    transition: all 1s ease-out;
+    transition: all 2s ease-out;
     max-height: 1000px;
     margin: 10px 0 10px 0;
 }
@@ -179,9 +182,13 @@ hr{
 .row-conocimientos{
     display: flex;
     align-items: center;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: flex-start;
     align-content: space-around;
     flex-wrap: wrap;
+}
+
+textarea{
+    margin: 3px 0px;
 }
 
