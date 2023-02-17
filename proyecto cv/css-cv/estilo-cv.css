@@ -1,5 +1,5 @@
 *{
-    font-family: 'Sofia Sans', sans-serif;
+    font-family: 'Baloo Da 2', cursive;
     text-align: center;
     box-sizing: border-box;
 }
@@ -7,22 +7,21 @@
 
 
 .background{
-    background-color: rgba(255,182,18,1);
-    opacity: 0.8;
-    background-image:  radial-gradient(#6c757d 0.75px, transparent 0.75px), radial-gradient(#6c757d 0.75px, rgba(255,182,18,1) 0.75px);
-    background-size: 30px 30px;
     background-position: 0 0,15px 15px;
     height: 100vh;
     overflow: auto;
     cursor: default;
+    background-color: #EEEEEE;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='324' height='324' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23605E61' stroke-width='2.1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23080904'%3E%3Ccircle cx='769' cy='229' r='7'/%3E%3Ccircle cx='539' cy='269' r='7'/%3E%3Ccircle cx='603' cy='493' r='7'/%3E%3Ccircle cx='731' cy='737' r='7'/%3E%3Ccircle cx='520' cy='660' r='7'/%3E%3Ccircle cx='309' cy='538' r='7'/%3E%3Ccircle cx='295' cy='764' r='7'/%3E%3Ccircle cx='40' cy='599' r='7'/%3E%3Ccircle cx='102' cy='382' r='7'/%3E%3Ccircle cx='127' cy='80' r='7'/%3E%3Ccircle cx='370' cy='105' r='7'/%3E%3Ccircle cx='578' cy='42' r='7'/%3E%3Ccircle cx='237' cy='261' r='7'/%3E%3Ccircle cx='390' cy='382' r='7'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 .recuadro{
     border-radius: 5px;
-    background-color: rgb(161, 161, 155);
+    background-color:#605e61;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     padding: 30px 0 30px 0;
+    box-shadow: 0px 0px 20px 0px #080904;
 }
 
 .datos-contenido{
@@ -30,7 +29,7 @@
 }
 
 .datos-contenido span, p, ul{
-    color: rgb(3,36,54);
+    color:#080904;
     font-style: normal;
     font-weight: normal;
     font-size: 25px;
@@ -38,25 +37,33 @@
 
 .titulos , .titulos p{
     font-size: 30px;
-    color: white;
-    font-weight: normal ;
+    color: #eeeeed;
+    font-weight: normal;
     margin-bottom: 0px;
 }
 
 .contenido .fa-solid {
-    color: white;
+    color: #eeeeed;
 }
 
 h1{
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bolder;
-    text-align: left;
-    color:rgb(3,36,54);
+    color: #eeeeed;
+    margin: 0;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 3px #080904;
+}
+
+.name-cv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h2{
     font-size: 30px;
-    color:  rgb(255, 182, 18);
+    color:  #080904;
     font-weight: normal;
     margin: 0;
     vertical-align:middle;
@@ -73,29 +80,24 @@ p{
 }
 
 .row-personal{
-    margin-top:  10px;
     display: flex;
+    justify-content: center;
 }
 
 .pic-cv{
-    display: flex;
-    justify-content: flex-end;
-    padding: 10px;
+    padding-top: 10px;
 }
 
-.name-cv{
-    display: flex;
-    justify-content: flex-start;
-    width: 50px;
-    padding: 10px;
+#fotocv {
+    box-shadow: 0 0 4px #121210;
 }
+
 
 .fa-graduation-cap, .fa-user, .fa-id-card, .fa-location-dot, .fa-phone, .fa-envelope, .fa-pen-clip, .fa-magnifying-glass, .fa-inbox, .fa-briefcase{
     margin-right: 20px;
-    /*margin-left: 20px;*/
     margin-top: 0px;
     margin-bottom: 0px;
-    color: rgb(255, 182, 18);;
+    color:#080904;;
 }
 
 .btn{
@@ -105,17 +107,19 @@ p{
 
 .encabezado{
     border-radius: 5px;
-    background-image: linear-gradient(90deg,transparent, rgba(255, 255, 255, 0.452) ,transparent);
+    background-color: #4bb8a5;
+    box-shadow: inset 0 0 4px #eeeeed;
+    margin-bottom: 10px;
 }
 
 .contenido{
     transition: all 1s ease-out;
     display: block;
-    background-color:  rgb(255, 182, 18);
+    background-color: #4bb8a5;
     max-height: 0;
     overflow: hidden;
     border-radius: 5px;
-    
+    box-shadow: inset 0 0 4px #eeeeed;
 }
   
 .pulsable.active + .contenido{
@@ -133,7 +137,7 @@ p{
 }
 
 .btn-arrow{
-    color: rgb(255, 182, 18);
+    color:#4bb8a5;
     transition: all 0.5s ease-in-out;
 }
 
@@ -158,7 +162,7 @@ p{
 
 .form-txt{
     font-size: 20px;
-    color: rgb(3,36,54);;
+    color:#080904;
     font-weight: normal ;
     margin-bottom: 0px;
     padding: 30px 20px 30px 20px;
@@ -169,8 +173,8 @@ hr{
     width:50%;
     height:3px;
     border-width:0;
-    color:rgb(3,36,54);
-    background-color:rgb(3,36,54);
+    color:#eeeeed;
+    background-color:#eeeeed;
 }
 
 .row-experiencia{
@@ -191,4 +195,3 @@ hr{
 textarea{
     margin: 3px 0px;
 }
-

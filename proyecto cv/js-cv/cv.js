@@ -21,5 +21,5 @@ document.getElementById("nombre").innerHTML = obj.name.first+" "+obj.name.last;
 document.getElementById("domicilio").innerHTML = obj.location.street.name+" "+obj.location.street.number+". <br>"+obj.location.city+", "+obj.location.state+", "+obj.location.country;
 document.getElementById("documento").innerHTML = obj.id.name+" "+obj.id.value;
 document.getElementById("email").innerHTML = obj.email;
-document.getElementById("telefonos").innerHTML = "Teléfono Fijo " + obj.phone +", "+"<br>Teléfono Celular "+obj.cell;
+document.getElementById("telefonos").innerHTML = "Teléfono Fijo: " + obj.phone +", "+"<br>Teléfono Celular: "+obj.cell;
 document.getElementById("fotocv").src= obj.picture.large;
